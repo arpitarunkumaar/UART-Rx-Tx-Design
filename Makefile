@@ -12,6 +12,9 @@ SOURCES = uart_rx.v uart_tx.v uart_tb.v
 VVP_FILE = uart_test.vvp
 WAVE_FILE = uart_test.vcd
 
+# Create the sim/ directory if it doesn't exist
+$(shell mkdir -p sim)
+
 # Default target
 all: $(VVP_FILE)
 
